@@ -1,4 +1,7 @@
 # Blazor Starter Application
+// Sebastian  Campos
+
+https://mango-plant-0ff9e230f.azurestaticapps.net/
 
 This template contains an example [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1#blazor-webassembly) client application, a C# [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and a C# class library with shared code.
 
@@ -19,6 +22,11 @@ _Note: If you're using the Azure Functions CLI tools, refer to [the documentatio
 - **API**: A C# Azure Functions API, which the Blazor application will call
 - **Shared**: A C# class library with a shared data model between the Blazor and Functions application
 
-## Deploy to Azure Static Web Apps
+## Deploy to Azure Static Web Apps 
 
 This application can be deployed to [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps), to learn how, check out [our quickstart guide](https://aka.ms/blazor-swa/quickstart).
+
+
+The image below was part of an assignment that required to create an Azure project. The function of this was to click counter a couple times then the user can fetch data to view the weather forcast with different dates, temperatures in either fahrenheit or celsius, and a summary of what the temperature feels like depending on temperature. An example would be on the first row it describes the tempature as cold with the given temperatures.
+
+![image](https://user-images.githubusercontent.com/72936062/134269025-e23e336d-e99b-43a3-ace5-01a201deed4a.png)
