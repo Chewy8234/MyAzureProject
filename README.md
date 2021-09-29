@@ -29,4 +29,8 @@ This application can be deployed to [Azure Static Web Apps](https://docs.microso
 
 The image below was part of an assignment that required to create an Azure project. The function of this was to click counter a couple times then the user can fetch data to view the weather forcast with different dates, temperatures in either fahrenheit or celsius, and a summary of what the temperature feels like depending on temperature. An example would be on the first row it describes the tempature as cold with the given temperatures.
 
+The second image prompts the user to enter a number and it multipled by two.
+
 ![image](https://user-images.githubusercontent.com/72936062/134269025-e23e336d-e99b-43a3-ace5-01a201deed4a.png)
+![image](https://user-images.githubusercontent.com/72936062/135187252-49526fce-202b-4627-84bc-82abeb7dc8a0.png)
+
