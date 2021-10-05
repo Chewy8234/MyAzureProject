@@ -1,0 +1,30 @@
+@page "/todo"                                                  <!--Modifying and printing a document-->
+
+<h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>             <!--defining Todo and checking todo is done-->
+
+<ul>                                                           <!--Representing an unorder list-->
+    @foreach (var todo in todos)                               <!--The foreach loop is executing the block of code-->
+    {
+        <li>                                                    <!--used to represent a list-->
+            <input type="checkbox" @bind="todo.IsDone" />       <!--input type = "checkbox" being made to create a checkbox-->
+            <input @bind="todo.Title" />                        <!--Bind the name property in the component class-->
+        </li>                                                   <!--used to represent a list-->
+    }
+</ul>                                                           <!--representing an unorder list-->
+
+<input placeholder="Something todo" @bind="newTodo" />          <!---->
+<button @onclick="AddTodo">Add todo</button>                    <!--Creating a button "Addtodo"-->
+
+@code {
+    private List<TodoItem> todos = new();                       <!--Intializing a List and takes in TodoItem and equals the new operator-->
+    private string newTodo;                                     <!--intializing a private string called newTodo-->
+
+    private void AddTodo()                                      <!--Wont return a value and not accessible outside the function-->
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))                <!--If !string.IsNullOrWhiteSpace(newTodo) then execute the program-->
+        {
+            todos.Add(new TodoItem { Title = newTodo });         <!--adding value to the list-->
+            newTodo = string.Empty;                             <!--Initaling mewTodo to 0 or null value-->
+        }
+    }
+}
