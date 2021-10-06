@@ -1,9 +1,9 @@
-@page "/todo"                                               <!--Modifying and printing a document-->
+@page "/todo"                                                //Modifying and printing a document
 
 <h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>           <!--defining Todo and checking todo is done-->
 
 <ul>                                                           <!--Representing an unorder list-->
-    @foreach (var todo in todos)                               <!--The foreach loop is executing the block of code-->
+    @foreach (var todo in todos)                               //The foreach loop is executing the block of code
     {
         <li>                                                    <!--used to represent a list-->
             <input type="checkbox" @bind="todo.IsDone" />       <!--input type = "checkbox" being made to create a checkbox-->
