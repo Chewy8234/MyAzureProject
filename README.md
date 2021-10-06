@@ -31,6 +31,10 @@ The image below was part of an assignment that required to create an Azure proje
 
 The second image prompts the user to enter a number and it multipled by two.
 
+The third image prompts the user to enter either a numerical value or letter(s).
+
 ![image](https://user-images.githubusercontent.com/72936062/134269025-e23e336d-e99b-43a3-ace5-01a201deed4a.png)
 ![image](https://user-images.githubusercontent.com/72936062/135187252-49526fce-202b-4627-84bc-82abeb7dc8a0.png)
+![image](https://user-images.githubusercontent.com/72936062/136127455-bade9e83-78b9-4641-b238-38200ab354a4.png)
+
 
