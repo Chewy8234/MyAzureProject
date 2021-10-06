@@ -1,6 +1,6 @@
-@page "/todo"                                                  <!--Modifying and printing a document-->
+@page "/todo"                                               <!--Modifying and printing a document-->
 
-<h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>             <!--defining Todo and checking todo is done-->
+<h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>           <!--defining Todo and checking todo is done-->
 
 <ul>                                                           <!--Representing an unorder list-->
     @foreach (var todo in todos)                               <!--The foreach loop is executing the block of code-->
@@ -24,7 +24,7 @@
         if (!string.IsNullOrWhiteSpace(newTodo))                 //If !string.IsNullOrWhiteSpace(newTodo) then execute the program
         {
             todos.Add(new TodoItem { Title = newTodo });         //adding value to the list
-            newTodo = string.Empty;                            // Initialize mewTodo to 0 or null value
+            newTodo = string.Empty;                             // Initialize mewTodo to 0 or null value
         }
     }
 }
