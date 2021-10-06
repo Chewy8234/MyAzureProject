@@ -16,15 +16,15 @@
 <button @onclick="AddTodo">Add todo</button>                    <!--Creating a button "Addtodo"-->
 
 @code {
-    private List<TodoItem> todos = new();                       <!--Intializing a List and takes in TodoItem and equals the new operator-->
-    private string newTodo;                                     <!--intializing a private string called newTodo-->
+    private List<TodoItem> todos = new();                       // Intializing a List and takes in TodoItem and equals the new operator
+    private string newTodo;                                     //Intializing a private string called newTodo
 
-    private void AddTodo()                                      <!--Wont return a value and not accessible outside the function-->
+    private void AddTodo()                                      //Wont return a value and not accessible outside the function
     {
-        if (!string.IsNullOrWhiteSpace(newTodo))                <!--If !string.IsNullOrWhiteSpace(newTodo) then execute the program-->
+        if (!string.IsNullOrWhiteSpace(newTodo))                 //If !string.IsNullOrWhiteSpace(newTodo) then execute the program
         {
-            todos.Add(new TodoItem { Title = newTodo });         <!--adding value to the list-->
-            newTodo = string.Empty;                             <!--Initaling mewTodo to 0 or null value-->
+            todos.Add(new TodoItem { Title = newTodo });         //adding value to the list
+            newTodo = string.Empty;                            // Initialize mewTodo to 0 or null value
         }
     }
 }
