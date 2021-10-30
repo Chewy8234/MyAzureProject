@@ -1,8 +1,10 @@
 @page "/Math"
-
+@inherits MathBase
 <h1>Math</h1>
 
 <p>Math </p>
+
+
 
 <input @bind =" InputString"/>
 
@@ -10,24 +12,3 @@
 
 <p>Output: @OutputString </p>
 
-@code
-
-{
-
-    private string InputString { get; set; }
-
-    private string OutputString { get; set; }
-
-    private void DoProcessing()
-
-    {
-
-        double num = double.Parse(InputString);
-
-        num = num * num; 
-
-        OutputString = num.ToString();
-
-    }
-
-}
