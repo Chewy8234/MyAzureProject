@@ -2,9 +2,9 @@
 
 
 public class MathBase:ComponentBase{
-    protected string InputString
+    protected string InputString;
 
-    protected string OutputString
+    protected string OutputString;
 
     protected void DoProcessing()
 
