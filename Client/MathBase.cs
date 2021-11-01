@@ -1,5 +1,4 @@
-
-
+using Microsoft.AspNetCore.Components;
 
 public class MathBase:ComponentBase{
     protected string InputString;
